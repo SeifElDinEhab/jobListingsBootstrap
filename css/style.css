@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+body {
+  overflow-x: hidden;
+  background-color: hsl(180deg, 52%, 96%);
+  font-family: "League Spartan", sans-serif;
+  max-width: 1920px;
+}
+
+header {
+  height: 156px;
+  background: url(../images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: hsl(180deg, 29%, 50%);
+}
+header .search-bar {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+header .search-bar .search-item {
+  color: hsl(180deg, 29%, 50%);
+  background-color: hsl(160deg, 36%, 95%);
+}
+header .search-bar .close {
+  background-color: hsl(180deg, 29%, 50%);
+}
+header .search-bar .close:hover {
+  background-color: hsl(180deg, 14%, 20%);
+}
+header .search-bar .clear {
+  transition: color 150ms ease-in, -webkit-text-decoration 150ms ease-in;
+  transition: color 150ms ease-in, text-decoration 150ms ease-in;
+  transition: color 150ms ease-in, text-decoration 150ms ease-in, -webkit-text-decoration 150ms ease-in;
+}
+header .search-bar .clear:hover {
+  color: hsl(180deg, 29%, 50%) !important;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    background: url(../images/bg-header-mobile.svg);
+    background-color: hsl(180deg, 29%, 50%);
+  }
+}
+main .listing {
+  background-color: hsl(120deg, 100%, 100%);
+}
+main .listing.featured--listing {
+  border-left: 5px solid hsl(180deg, 29%, 50%);
+}
+main .listing .featured {
+  background-color: hsl(180deg, 14%, 20%);
+}
+main .listing .new {
+  background-color: hsl(180deg, 29%, 50%);
+}
+main .listing img {
+  width: 100px;
+  height: 100px;
+  top: 40px;
+}
+main .listing .name {
+  color: hsl(180deg, 29%, 50%);
+  font-size: 18px;
+}
+main .listing .position {
+  color: hsl(180deg, 14%, 20%);
+  transition: color 150ms ease-in;
+}
+main .listing .position:hover {
+  color: hsl(180deg, 29%, 50%);
+}
+main .listing .tool {
+  color: hsl(180deg, 29%, 50%);
+  background-color: hsl(160deg, 36%, 95%);
+}
+main .listing .tool:hover {
+  color: hsl(160deg, 36%, 95%);
+  background-color: hsl(180deg, 29%, 50%);
+  transition: color 150ms ease-in, background-color 150ms ease-in;
+}
+
+@media only screen and (max-width: 992px) {
+  main .listing img {
+    top: -40px;
+    left: 20px;
+  }
+}
+.attribution {
+  color: hsl(180deg, 14%, 20%);
+}
+.attribution a {
+  color: hsl(180deg, 29%, 50%);
+}/*# sourceMappingURL=style.css.map */

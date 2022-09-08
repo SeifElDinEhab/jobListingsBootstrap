@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+body {
+  overflow-x: hidden;
+  background-color: hsl(180, 52%, 96%);
+  font-family: "League Spartan", sans-serif;
+  max-width: 1920px;
+}
+header {
+  height: 156px;
+  background: url(../images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: hsl(180, 29%, 50%);
+  .search-bar {
+    height: fit-content;
+    .search-item {
+      color: hsl(180, 29%, 50%);
+      background-color: hsl(160, 36%, 95%);
+    }
+    .close {
+      background-color: hsl(180, 29%, 50%);
+      &:hover {
+        background-color: hsl(180, 14%, 20%);
+      }
+    }
+    .clear {
+      transition: color 150ms ease-in, text-decoration 150ms ease-in;
+      &:hover {
+        color: hsl(180, 29%, 50%) !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    background: url(../images/bg-header-mobile.svg);
+    background-color: hsl(180, 29%, 50%);
+  }
+}
+
+main {
+  .listing {
+    background-color: hsl(120, 100%, 100%);
+    &.featured--listing {
+      border-left: 5px solid hsl(180, 29%, 50%);
+    }
+    .featured {
+      background-color: hsl(180, 14%, 20%);
+    }
+    .new {
+      background-color: hsl(180, 29%, 50%);
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      top: 40px;
+    }
+    .name {
+      color: hsl(180, 29%, 50%);
+      font-size: 18px;
+    }
+    .position {
+      color: hsl(180, 14%, 20%);
+      transition: color 150ms ease-in;
+      &:hover {
+        color: hsl(180, 29%, 50%);
+      }
+    }
+    .tool {
+      color: hsl(180, 29%, 50%);
+      background-color: hsl(160, 36%, 95%);
+      &:hover {
+        color: hsl(160, 36%, 95%);
+        background-color: hsl(180, 29%, 50%);
+        transition: color 150ms ease-in, background-color 150ms ease-in;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    .listing {
+      img {
+        top: -40px;
+        left: 20px;
+      }
+    }
+  }
+}
+
+.attribution {
+  color: hsl(180, 14%, 20%);
+  a {
+    color: hsl(180, 29%, 50%);
+  }
+}
